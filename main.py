@@ -53,7 +53,7 @@ def count(timer):
     canvas.itemconfig(timer_text, text="{:02d}:{:02d}".format(timer//60,timer%60))
     if(timer>0):
         global Timer
-        Timer = window.after(5, count, timer-1)
+        Timer = window.after(1000, count, timer-1)
     else:
         start()
 #UI SETUP
